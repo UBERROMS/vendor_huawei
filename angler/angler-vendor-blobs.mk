@@ -13,6 +13,9 @@
 # limitations under the License.
 
 PRODUCT_COPY_FILES += \
+	vendor/huawei/angler/proprietary/app/SetupSmartDeviceOverlay/oat/arm64/SetupSmartDeviceOverlay.odex:system/app/SetupSmartDeviceOverlay/oat/arm64/SetupSmartDeviceOverlay.odex \
+	vendor/huawei/angler/proprietary/app/HwSarControlService/oat/arm64/HwSarControlService.odex:system/app/HwSarControlService/oat/arm64/HwSarControlService.odex \
+	vendor/huawei/angler/proprietary/app/HwMMITest/oat/arm64/HwMMITest.odex:system/app/HwMMITest/oat/arm64/HwMMITest.odex \
     vendor/huawei/angler/proprietary/bin/ATFWD-daemon:system/bin/ATFWD-daemon \
     vendor/huawei/angler/proprietary/bin/cnd:system/bin/cnd \
     vendor/huawei/angler/proprietary/bin/diag_klog:system/bin/diag_klog \
@@ -80,6 +83,7 @@ PRODUCT_COPY_FILES += \
     vendor/huawei/angler/proprietary/etc/pp_calib_data_SAMSUNG_S6E3HA3X01_5P7_1440P_CMD_DUAL0.xml:system/etc/pp_calib_data_SAMSUNG_S6E3HA3X01_5P7_1440P_CMD_DUAL0.xml \
     vendor/huawei/angler/proprietary/etc/sap.conf:system/etc/sap.conf \
     vendor/huawei/angler/proprietary/lib/hw/audio.primary.msm8994.so:system/lib/hw/audio.primary.msm8994.so \
+	vendor/huawei/angler/proprietary/lib/hw/context_hub.default.so:system/lib/hw/context_hub.default.so \
     vendor/huawei/angler/proprietary/lib/hw/gps.msm8994.so:system/lib/hw/gps.msm8994.so \
     vendor/huawei/angler/proprietary/lib/soundfx/libfmas.so:system/lib/soundfx/libfmas.so \
     vendor/huawei/angler/proprietary/lib/libdmengine.so:system/lib/libdmengine.so \
@@ -94,6 +98,7 @@ PRODUCT_COPY_FILES += \
     vendor/huawei/angler/proprietary/lib/libmm-qcamera.so:system/lib/libmm-qcamera.so \
     vendor/huawei/angler/proprietary/lib/libtinyxml.so:system/lib/libtinyxml.so \
     vendor/huawei/angler/proprietary/lib64/hw/audio.primary.msm8994.so:system/lib64/hw/audio.primary.msm8994.so \
+	vendor/huawei/angler/proprietary/lib64/hw/context_hub.default.so:system/lib64/hw/context_hub.default.so \
     vendor/huawei/angler/proprietary/lib64/hw/gps.msm8994.so:system/lib64/hw/gps.msm8994.so \
     vendor/huawei/angler/proprietary/lib64/libgps.utils.so:system/lib64/libgps.utils.so \
     vendor/huawei/angler/proprietary/lib64/libimscamera_jni.so:system/lib64/libimscamera_jni.so \
