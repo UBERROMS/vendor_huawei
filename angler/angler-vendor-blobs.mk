@@ -15,13 +15,8 @@
 PRODUCT_COPY_FILES += \
     vendor/huawei/angler/proprietary/bin/ATFWD-daemon:system/bin/ATFWD-daemon \
     vendor/huawei/angler/proprietary/bin/cnd:system/bin/cnd \
-    vendor/huawei/angler/proprietary/bin/diag_callback_client:system/bin/diag_callback_client \
-    vendor/huawei/angler/proprietary/bin/diag_dci_sample:system/bin/diag_dci_sample \
     vendor/huawei/angler/proprietary/bin/diag_klog:system/bin/diag_klog \
     vendor/huawei/angler/proprietary/bin/diag_mdlog:system/bin/diag_mdlog \
-    vendor/huawei/angler/proprietary/bin/diag_qshrink4_daemon:system/bin/diag_qshrink4_daemon \
-    vendor/huawei/angler/proprietary/bin/diag_socket_log:system/bin/diag_socket_log \
-    vendor/huawei/angler/proprietary/bin/diag_uart_log:system/bin/diag_uart_log \
     vendor/huawei/angler/proprietary/bin/dsm_ctrl:system/bin/dsm_ctrl \
     vendor/huawei/angler/proprietary/bin/fingerprintd:system/bin/fingerprintd \
     vendor/huawei/angler/proprietary/bin/imscmservice:system/bin/imscmservice \
@@ -30,27 +25,18 @@ PRODUCT_COPY_FILES += \
     vendor/huawei/angler/proprietary/bin/ims_rtp_daemon:system/bin/ims_rtp_daemon \
     vendor/huawei/angler/proprietary/bin/irsc_util:system/bin/irsc_util \
     vendor/huawei/angler/proprietary/bin/loc_launcher:system/bin/loc_launcher \
-    vendor/huawei/angler/proprietary/bin/mm-pp-daemon:system/bin/mm-pp-daemon \
-    vendor/huawei/angler/proprietary/bin/mm-qjpeg-dec-test:system/bin/mm-qjpeg-dec-test \
-    vendor/huawei/angler/proprietary/bin/mm-qjpeg-enc-test:system/bin/mm-qjpeg-enc-test \
-    vendor/huawei/angler/proprietary/bin/mm-qomx-idec-test:system/bin/mm-qomx-idec-test \
-    vendor/huawei/angler/proprietary/bin/mm-qomx-ienc-test:system/bin/mm-qomx-ienc-test \
     vendor/huawei/angler/proprietary/bin/msm_irqbalance:system/bin/msm_irqbalance \
     vendor/huawei/angler/proprietary/bin/netmgrd:system/bin/netmgrd \
     vendor/huawei/angler/proprietary/bin/nl_listener:system/bin/nl_listener \
     vendor/huawei/angler/proprietary/bin/perfd:system/bin/perfd \
-    vendor/huawei/angler/proprietary/bin/PktRspTest:system/bin/PktRspTest \
     vendor/huawei/angler/proprietary/bin/pm-proxy:system/bin/pm-proxy \
     vendor/huawei/angler/proprietary/bin/pm-service:system/bin/pm-service \
     vendor/huawei/angler/proprietary/bin/port-bridge:system/bin/port-bridge \
-    vendor/huawei/angler/proprietary/bin/qjpeg-dma-test:system/bin/qjpeg-dma-test \
     vendor/huawei/angler/proprietary/bin/qmuxd:system/bin/qmuxd \
     vendor/huawei/angler/proprietary/bin/radish:system/bin/radish \
     vendor/huawei/angler/proprietary/bin/rmt_storage:system/bin/rmt_storage \
     vendor/huawei/angler/proprietary/bin/ssr_setup:system/bin/ssr_setup \
     vendor/huawei/angler/proprietary/bin/subsystem_ramdump:system/bin/subsystem_ramdump \
-    vendor/huawei/angler/proprietary/bin/test_diag:system/bin/test_diag \
-    vendor/huawei/angler/proprietary/bin/test_module_pproc:system/bin/test_module_pproc \
     vendor/huawei/angler/proprietary/bin/thermal-engine:system/bin/thermal-engine \
     vendor/huawei/angler/proprietary/bin/time_daemon:system/bin/time_daemon \
     vendor/huawei/angler/proprietary/etc/acdbdata/angler/Angler_Bluetooth_cal.acdb:system/etc/acdbdata/angler/Angler_Bluetooth_cal.acdb \
@@ -89,7 +75,6 @@ PRODUCT_COPY_FILES += \
     vendor/huawei/angler/proprietary/etc/permissions/com.android.omadm.service.xml:system/etc/permissions/com.android.omadm.service.xml \
     vendor/huawei/angler/proprietary/etc/permissions/qcrilhook.xml:system/etc/permissions/qcrilhook.xml \
     vendor/huawei/angler/proprietary/etc/flp.conf:system/etc/flp.conf \
-    vendor/huawei/angler/proprietary/etc/gps.conf:system/etc/gps.conf \
     vendor/huawei/angler/proprietary/etc/izat.conf:system/etc/izat.conf \
     vendor/huawei/angler/proprietary/etc/lowi.conf:system/etc/lowi.conf \
     vendor/huawei/angler/proprietary/etc/pp_calib_data_SAMSUNG_S6E3HA3X01_5P7_1440P_CMD_DUAL0.xml:system/etc/pp_calib_data_SAMSUNG_S6E3HA3X01_5P7_1440P_CMD_DUAL0.xml \
