@@ -18,7 +18,6 @@ PRODUCT_COPY_FILES += \
     vendor/huawei/angler/proprietary/bin/diag_klog:system/bin/diag_klog \
     vendor/huawei/angler/proprietary/bin/diag_mdlog:system/bin/diag_mdlog \
     vendor/huawei/angler/proprietary/bin/dsm_ctrl:system/bin/dsm_ctrl \
-    vendor/huawei/angler/proprietary/bin/fingerprintd:system/bin/fingerprintd \
     vendor/huawei/angler/proprietary/bin/imscmservice:system/bin/imscmservice \
     vendor/huawei/angler/proprietary/bin/imsdatadaemon:system/bin/imsdatadaemon \
     vendor/huawei/angler/proprietary/bin/imsqmidaemon:system/bin/imsqmidaemon \
@@ -80,32 +79,16 @@ PRODUCT_COPY_FILES += \
     vendor/huawei/angler/proprietary/etc/pp_calib_data_SAMSUNG_S6E3HA3X01_5P7_1440P_CMD_DUAL0.xml:system/etc/pp_calib_data_SAMSUNG_S6E3HA3X01_5P7_1440P_CMD_DUAL0.xml \
     vendor/huawei/angler/proprietary/etc/sap.conf:system/etc/sap.conf \
     vendor/huawei/angler/proprietary/lib/hw/audio.primary.msm8994.so:system/lib/hw/audio.primary.msm8994.so \
-	vendor/huawei/angler/proprietary/lib/hw/context_hub.default.so:system/lib/hw/context_hub.default.so \
-	vendor/huawei/angler/proprietary/lib/hw/fingerprint.msm8994.so:system/lib/hw/fingerprint.msm8994.so \
-    vendor/huawei/angler/proprietary/lib/hw/gps.msm8994.so:system/lib/hw/gps.msm8994.so \
     vendor/huawei/angler/proprietary/lib/soundfx/libfmas.so:system/lib/soundfx/libfmas.so \
     vendor/huawei/angler/proprietary/lib/libdmengine.so:system/lib/libdmengine.so \
     vendor/huawei/angler/proprietary/lib/libdmjavaplugin.so:system/lib/libdmjavaplugin.so \
-    vendor/huawei/angler/proprietary/lib/libgps.utils.so:system/lib/libgps.utils.so \
     vendor/huawei/angler/proprietary/lib/libimscamera_jni.so:system/lib/libimscamera_jni.so \
     vendor/huawei/angler/proprietary/lib/libimsmedia_jni.so:system/lib/libimsmedia_jni.so \
-    vendor/huawei/angler/proprietary/lib/libloc_api_v02.so:system/lib/libloc_api_v02.so \
-    vendor/huawei/angler/proprietary/lib/libloc_core.so:system/lib/libloc_core.so \
-    vendor/huawei/angler/proprietary/lib/libloc_ds_api.so:system/lib/libloc_ds_api.so \
-    vendor/huawei/angler/proprietary/lib/libloc_eng.so:system/lib/libloc_eng.so \
     vendor/huawei/angler/proprietary/lib/libmm-qcamera.so:system/lib/libmm-qcamera.so \
     vendor/huawei/angler/proprietary/lib/libtinyxml.so:system/lib/libtinyxml.so \
     vendor/huawei/angler/proprietary/lib64/hw/audio.primary.msm8994.so:system/lib64/hw/audio.primary.msm8994.so \
-	vendor/huawei/angler/proprietary/lib64/hw/context_hub.default.so:system/lib64/hw/context_hub.default.so \
-	vendor/huawei/angler/proprietary/lib64/hw/fingerprint.msm8994.so:system/lib64/hw/fingerprint.msm8994.so \
-    vendor/huawei/angler/proprietary/lib64/hw/gps.msm8994.so:system/lib64/hw/gps.msm8994.so \
-    vendor/huawei/angler/proprietary/lib64/libgps.utils.so:system/lib64/libgps.utils.so \
     vendor/huawei/angler/proprietary/lib64/libimscamera_jni.so:system/lib64/libimscamera_jni.so \
     vendor/huawei/angler/proprietary/lib64/libimsmedia_jni.so:system/lib64/libimsmedia_jni.so \
-    vendor/huawei/angler/proprietary/lib64/libloc_api_v02.so:system/lib64/libloc_api_v02.so \
-    vendor/huawei/angler/proprietary/lib64/libloc_core.so:system/lib64/libloc_core.so \
-    vendor/huawei/angler/proprietary/lib64/libloc_ds_api.so:system/lib64/libloc_ds_api.so \
-    vendor/huawei/angler/proprietary/lib64/libloc_eng.so:system/lib64/libloc_eng.so \
     vendor/huawei/angler/proprietary/lib64/libManufacture.so:system/lib64/libManufacture.so \
     vendor/huawei/angler/proprietary/lib64/libtinyxml.so:system/lib64/libtinyxml.so \
     vendor/huawei/angler/proprietary/xbin/wlutil:system/xbin/wlutil 
