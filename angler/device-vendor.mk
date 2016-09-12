@@ -1,4 +1,4 @@
-# Copyright (C) 2015 The Pure Nexus Project
+# Copyright (C) 2016 UBERROMS
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -12,8 +12,6 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-$(call inherit-product, vendor/huawei/angler/angler-vendor-blobs.mk)
-
 # Prebuilt APKs
 PRODUCT_PACKAGES += \
     CABLService \
@@ -23,7 +21,7 @@ PRODUCT_PACKAGES += \
     qcrilmsgtunnel \
     SetupSmartDeviceOverlay \
     TimeService \
-    Tycho 
+    Tycho
 
 # Prebuilt jars
 PRODUCT_PACKAGES += \
@@ -42,10 +40,27 @@ PRODUCT_PACKAGES += \
     HotwordEnrollment \
     SprintDM
 
-# Symlinks
+# Symlinks Binaries
+PRODUCT_PACKAGES += \
+    ims_rtp_daemon \
+    imscmservice \
+    imsdatadaemon \
+    imsqmidaemon
+
+# Symlinks Libraries
 PRODUCT_PACKAGES += \
     libimsmedia_jni.so \
     libimscamera_jni.so \
     libdmengine.so \
     libdmjavaplugin.so \
     libManufacture.so
+
+# Symlinks Config
+PRODUCT_PACKAGES += \
+    dsi_config.xml \
+    flp.conf \
+    izat.conf \
+    netmgr_config.xml \
+    pp_calib_data_SAMSUNG_S6E3HA3X01_5P7_1440P_CMD_DUAL0.xml \
+    profile.txt \
+    sap.conf
