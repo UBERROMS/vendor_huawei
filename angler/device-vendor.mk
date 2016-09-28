@@ -14,7 +14,6 @@
 
 # Prebuilt APKs
 PRODUCT_PACKAGES += \
-    CABLService \
     HwMMITest \
     HwSarControlService \
     ims \
@@ -25,6 +24,8 @@ PRODUCT_PACKAGES += \
 
 # Prebuilt jars
 PRODUCT_PACKAGES += \
+    com.google.widevine.software.drm \
+	com.google.android.camera.experimental2015 \
     qcrilhook
 
 # Prebuilt privileged APKs
@@ -36,6 +37,7 @@ PRODUCT_PACKAGES += \
     DiagMon \
     DMService \
     GCS \
+	GoogleExtServices \
     HiddenMenu \
     HotwordEnrollment \
     SprintDM
