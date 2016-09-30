@@ -17,7 +17,6 @@ PRODUCT_PACKAGES += \
     HwMMITest \
     HwSarControlService \
     ims \
-    qcrilmsgtunnel \
     SetupSmartDeviceOverlay \
     TimeService \
     Tycho
@@ -25,7 +24,7 @@ PRODUCT_PACKAGES += \
 # Prebuilt jars
 PRODUCT_PACKAGES += \
     com.google.widevine.software.drm \
-	com.google.android.camera.experimental2015 \
+    com.google.android.camera.experimental2015 \
     qcrilhook
 
 # Prebuilt privileged APKs
@@ -37,9 +36,10 @@ PRODUCT_PACKAGES += \
     DiagMon \
     DMService \
     GCS \
-	GoogleExtServices \
+    GoogleExtServices \
     HiddenMenu \
     HotwordEnrollment \
+    qcrilmsgtunnel \
     SprintDM
 
 # Symlinks Binaries
