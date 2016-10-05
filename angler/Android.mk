@@ -17,7 +17,18 @@ LOCAL_PATH := $(call my-dir)
 ifneq ($(filter angler,$(TARGET_DEVICE)),)
 
 include $(CLEAR_VARS)
+LOCAL_MODULE := ims
+LOCAL_MODULE_OWNER := huawei
+LOCAL_SRC_FILES := proprietary/app/ims/ims.apk
+LOCAL_CERTIFICATE := platform
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_CLASS := APPS
+LOCAL_MODULE_SUFFIX := .apk
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
 LOCAL_MODULE := HwMMITest
+LOCAL_MODULE_OWNER := huawei
 LOCAL_MODULE_TAGS := optional
 LOCAL_SRC_FILES := proprietary/app/HwMMITest/HwMMITest.apk
 LOCAL_CERTIFICATE := platform
@@ -27,6 +38,7 @@ include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
 LOCAL_MODULE := HwSarControlService
+LOCAL_MODULE_OWNER := huawei
 LOCAL_MODULE_TAGS := optional
 LOCAL_SRC_FILES := proprietary/app/HwSarControlService/HwSarControlService.apk
 LOCAL_CERTIFICATE := platform
@@ -35,16 +47,8 @@ LOCAL_MODULE_SUFFIX := $(COMMON_ANDROID_PACKAGE_SUFFIX)
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
-LOCAL_MODULE := ims
-LOCAL_MODULE_TAGS := optional
-LOCAL_SRC_FILES := proprietary/app/ims/ims.apk
-LOCAL_CERTIFICATE := platform
-LOCAL_MODULE_CLASS := APPS
-LOCAL_MODULE_SUFFIX := $(COMMON_ANDROID_PACKAGE_SUFFIX)
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
 LOCAL_MODULE := SetupSmartDeviceOverlay
+LOCAL_MODULE_OWNER := huawei
 LOCAL_MODULE_TAGS := optional
 LOCAL_SRC_FILES := proprietary/app/SetupSmartDeviceOverlay/SetupSmartDeviceOverlay.apk
 LOCAL_CERTIFICATE := platform
@@ -53,16 +57,8 @@ LOCAL_MODULE_SUFFIX := $(COMMON_ANDROID_PACKAGE_SUFFIX)
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
-LOCAL_MODULE := TimeService
-LOCAL_MODULE_TAGS := optional
-LOCAL_SRC_FILES := proprietary/app/TimeService/TimeService.apk
-LOCAL_CERTIFICATE := platform
-LOCAL_MODULE_CLASS := APPS
-LOCAL_MODULE_SUFFIX := $(COMMON_ANDROID_PACKAGE_SUFFIX)
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
 LOCAL_MODULE := Tycho
+LOCAL_MODULE_OWNER := huawei
 LOCAL_MODULE_TAGS := optional
 LOCAL_SRC_FILES := proprietary/app/Tycho/Tycho.apk
 LOCAL_CERTIFICATE := platform
@@ -72,6 +68,7 @@ include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
 LOCAL_MODULE := CallStatistics
+LOCAL_MODULE_OWNER := huawei
 LOCAL_MODULE_TAGS := optional
 LOCAL_SRC_FILES := proprietary/priv-app/CallStatistics/CallStatistics.apk
 LOCAL_CERTIFICATE := platform
@@ -82,6 +79,7 @@ include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
 LOCAL_MODULE := CNEService
+LOCAL_MODULE_OWNER := huawei
 LOCAL_MODULE_TAGS := optional
 LOCAL_SRC_FILES := proprietary/priv-app/CNEService/CNEService.apk
 LOCAL_CERTIFICATE := platform
@@ -92,6 +90,7 @@ include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
 LOCAL_MODULE := ConnMO
+LOCAL_MODULE_OWNER := huawei
 LOCAL_MODULE_TAGS := optional
 LOCAL_SRC_FILES := proprietary/priv-app/ConnMO/ConnMO.apk
 LOCAL_CERTIFICATE := platform
@@ -102,6 +101,7 @@ include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
 LOCAL_MODULE := DCMO
+LOCAL_MODULE_OWNER := huawei
 LOCAL_MODULE_TAGS := optional
 LOCAL_SRC_FILES := proprietary/priv-app/DCMO/DCMO.apk
 LOCAL_CERTIFICATE := platform
@@ -112,6 +112,7 @@ include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
 LOCAL_MODULE := DiagMon
+LOCAL_MODULE_OWNER := huawei
 LOCAL_MODULE_TAGS := optional
 LOCAL_SRC_FILES := proprietary/priv-app/DiagMon/DiagMon.apk
 LOCAL_CERTIFICATE := platform
@@ -122,6 +123,7 @@ include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
 LOCAL_MODULE := DMService
+LOCAL_MODULE_OWNER := huawei
 LOCAL_MODULE_TAGS := optional
 LOCAL_SRC_FILES := proprietary/priv-app/DMService/DMService.apk
 LOCAL_CERTIFICATE := platform
@@ -132,16 +134,18 @@ include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
 LOCAL_MODULE := GCS
-LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_OWNER := huawei
 LOCAL_SRC_FILES := proprietary/priv-app/GCS/GCS.apk
 LOCAL_CERTIFICATE := PRESIGNED
+LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := APPS
+LOCAL_MODULE_SUFFIX := .apk
 LOCAL_PRIVILEGED_MODULE := true
-LOCAL_MODULE_SUFFIX := $(COMMON_ANDROID_PACKAGE_SUFFIX)
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
 LOCAL_MODULE := GoogleExtServices
+LOCAL_MODULE_OWNER := huawei
 LOCAL_MODULE_TAGS := optional
 LOCAL_SRC_FILES := proprietary/priv-app/GoogleExtServices/GoogleExtServices.apk
 LOCAL_CERTIFICATE := PRESIGNED
@@ -152,6 +156,7 @@ include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
 LOCAL_MODULE := HiddenMenu
+LOCAL_MODULE_OWNER := huawei
 LOCAL_MODULE_TAGS := optional
 LOCAL_SRC_FILES := proprietary/priv-app/HiddenMenu/HiddenMenu.apk
 LOCAL_CERTIFICATE := platform
@@ -162,12 +167,13 @@ include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
 LOCAL_MODULE := HotwordEnrollment
-LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_OWNER := huawei
 LOCAL_SRC_FILES := proprietary/priv-app/HotwordEnrollment/HotwordEnrollment.apk
-LOCAL_CERTIFICATE := platform
+LOCAL_CERTIFICATE := PRESIGNED
+LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := APPS
+LOCAL_MODULE_SUFFIX := .apk
 LOCAL_PRIVILEGED_MODULE := true
-LOCAL_MODULE_SUFFIX := $(COMMON_ANDROID_PACKAGE_SUFFIX)
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
@@ -177,8 +183,8 @@ LOCAL_SRC_FILES := proprietary/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk
 LOCAL_CERTIFICATE := platform
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := APPS
+LOCAL_MODULE_SUFFIX := .apk
 LOCAL_PRIVILEGED_MODULE := true
-LOCAL_MODULE_SUFFIX := $(COMMON_ANDROID_PACKAGE_SUFFIX)
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
@@ -212,11 +218,10 @@ include $(BUILD_PREBUILT)
 include $(CLEAR_VARS)
 LOCAL_MODULE := qcrilhook
 LOCAL_MODULE_OWNER := huawei
-LOCAL_MODULE_TAGS := optional
 LOCAL_SRC_FILES := proprietary/framework/qcrilhook.jar
-LOCAL_CERTIFICATE := PRESIGNED
+LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := JAVA_LIBRARIES
-LOCAL_MODULE_SUFFIX := $(COMMON_JAVA_PACKAGE_SUFFIX)
+LOCAL_MODULE_SUFFIX := .jar
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
@@ -299,6 +304,22 @@ $(LOCAL_BUILT_MODULE):
 	$(hide) ln -sf $(TARGET) $(SYMLINK)
 	$(hide) touch $@
 
+include $(CLEAR_VARS)
+LOCAL_MODULE := lowi.conf
+LOCAL_MODULE_CLASS := FAKE
+LOCAL_MODULE_TAGS := optional
+include $(BUILD_SYSTEM)/base_rules.mk
+$(LOCAL_BUILT_MODULE): TARGET := /vendor/etc/lowi.conf
+$(LOCAL_BUILT_MODULE): SYMLINK := $(TARGET_OUT)/etc/$(LOCAL_MODULE)
+$(LOCAL_BUILT_MODULE):
+	$(hide) echo "Symlink: $(SYMLINK) -> $(TARGET)"
+	$(hide) mkdir -p $(dir $@)
+	$(hide) mkdir -p $(dir $(SYMLINK))
+	$(hide) rm -rf $@
+	$(hide) rm -rf $(SYMLINK)
+	$(hide) ln -sf $(TARGET) $(SYMLINK)
+	$(hide) touch $@
+	
 include $(CLEAR_VARS)
 LOCAL_MODULE := izat.conf
 LOCAL_MODULE_CLASS := FAKE
@@ -400,7 +421,7 @@ LOCAL_MODULE := libdmengine.so
 LOCAL_MODULE_CLASS := FAKE
 LOCAL_MODULE_TAGS := optional
 include $(BUILD_SYSTEM)/base_rules.mk
-$(LOCAL_BUILT_MODULE): TARGET := /lib/libdmengine.so
+$(LOCAL_BUILT_MODULE): TARGET := /system/lib/libdmengine.so
 $(LOCAL_BUILT_MODULE): SYMLINK := $(TARGET_OUT)/priv-app/DMService/lib/arm/$(LOCAL_MODULE)
 $(LOCAL_BUILT_MODULE):
 	$(hide) echo "Symlink: $(SYMLINK) -> $(TARGET)"
@@ -416,7 +437,7 @@ LOCAL_MODULE := libdmjavaplugin.so
 LOCAL_MODULE_CLASS := FAKE
 LOCAL_MODULE_TAGS := optional
 include $(BUILD_SYSTEM)/base_rules.mk
-$(LOCAL_BUILT_MODULE): TARGET := /lib/libdmjavaplugin.so
+$(LOCAL_BUILT_MODULE): TARGET := /system/lib/libdmjavaplugin.so
 $(LOCAL_BUILT_MODULE): SYMLINK := $(TARGET_OUT)/priv-app/DMService/lib/arm/$(LOCAL_MODULE)
 $(LOCAL_BUILT_MODULE):
 	$(hide) echo "Symlink: $(SYMLINK) -> $(TARGET)"
@@ -432,7 +453,7 @@ LOCAL_MODULE := libManufacture.so
 LOCAL_MODULE_CLASS := FAKE
 LOCAL_MODULE_TAGS := optional
 include $(BUILD_SYSTEM)/base_rules.mk
-$(LOCAL_BUILT_MODULE): TARGET := /lib64/libManufacture.so
+$(LOCAL_BUILT_MODULE): TARGET := /system/lib64/libManufacture.so
 $(LOCAL_BUILT_MODULE): SYMLINK := $(TARGET_OUT)/app/HwMMITest/lib/arm64/$(LOCAL_MODULE)
 $(LOCAL_BUILT_MODULE):
 	$(hide) echo "Symlink: $(SYMLINK) -> $(TARGET)"
@@ -448,7 +469,7 @@ LOCAL_MODULE := libimsmedia_jni.so
 LOCAL_MODULE_CLASS := FAKE
 LOCAL_MODULE_TAGS := optional
 include $(BUILD_SYSTEM)/base_rules.mk
-$(LOCAL_BUILT_MODULE): TARGET := /lib64/libimsmedia_jni.so
+$(LOCAL_BUILT_MODULE): TARGET := /vendor/lib64/libimsmedia_jni.so
 $(LOCAL_BUILT_MODULE): SYMLINK := $(TARGET_OUT)/app/ims/lib/arm64/$(LOCAL_MODULE)
 $(LOCAL_BUILT_MODULE):
 	$(hide) echo "Symlink: $(SYMLINK) -> $(TARGET)"
@@ -464,7 +485,7 @@ LOCAL_MODULE := libimscamera_jni.so
 LOCAL_MODULE_CLASS := FAKE
 LOCAL_MODULE_TAGS := optional
 include $(BUILD_SYSTEM)/base_rules.mk
-$(LOCAL_BUILT_MODULE): TARGET := /lib64/libimscamera_jni.so
+$(LOCAL_BUILT_MODULE): TARGET := /vendor/lib64/libimscamera_jni.so
 $(LOCAL_BUILT_MODULE): SYMLINK := $(TARGET_OUT)/app/ims/lib/arm64/$(LOCAL_MODULE)
 $(LOCAL_BUILT_MODULE):
 	$(hide) echo "Symlink: $(SYMLINK) -> $(TARGET)"
