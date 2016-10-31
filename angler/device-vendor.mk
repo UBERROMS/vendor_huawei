@@ -14,30 +14,18 @@
 
 # Prebuilt APKs
 PRODUCT_PACKAGES += \
-    HwMMITest \
-    HwSarControlService \
     ims \
-    SetupSmartDeviceOverlay \
-    TimeService \
     Tycho
 
 # Prebuilt jars
 PRODUCT_PACKAGES += \
     com.google.widevine.software.drm \
-    com.google.android.camera.experimental2015 \
+    com.google.android.camera.experimental2016 \
     qcrilhook
 
 # Prebuilt privileged APKs
 PRODUCT_PACKAGES += \
-    CallStatistics \
     CNEService \
-    ConnMO \
-    DCMO \
-    DiagMon \
-    DMService \
-    GCS \
-    GoogleExtServices \
-    HiddenMenu \
     HotwordEnrollment \
     qcrilmsgtunnel \
     SprintDM

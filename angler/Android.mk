@@ -28,39 +28,6 @@ LOCAL_DEX_PREOPT := false
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
-LOCAL_MODULE := HwMMITest
-LOCAL_MODULE_OWNER := huawei
-LOCAL_MODULE_TAGS := optional
-LOCAL_SRC_FILES := proprietary/app/HwMMITest/HwMMITest.apk
-LOCAL_CERTIFICATE := platform
-LOCAL_MODULE_CLASS := APPS
-LOCAL_MODULE_SUFFIX := $(COMMON_ANDROID_PACKAGE_SUFFIX)
-LOCAL_DEX_PREOPT := false
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
-LOCAL_MODULE := HwSarControlService
-LOCAL_MODULE_OWNER := huawei
-LOCAL_MODULE_TAGS := optional
-LOCAL_SRC_FILES := proprietary/app/HwSarControlService/HwSarControlService.apk
-LOCAL_CERTIFICATE := platform
-LOCAL_MODULE_CLASS := APPS
-LOCAL_MODULE_SUFFIX := $(COMMON_ANDROID_PACKAGE_SUFFIX)
-LOCAL_DEX_PREOPT := false
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
-LOCAL_MODULE := SetupSmartDeviceOverlay
-LOCAL_MODULE_OWNER := huawei
-LOCAL_MODULE_TAGS := optional
-LOCAL_SRC_FILES := proprietary/app/SetupSmartDeviceOverlay/SetupSmartDeviceOverlay.apk
-LOCAL_CERTIFICATE := platform
-LOCAL_MODULE_CLASS := APPS
-LOCAL_MODULE_SUFFIX := $(COMMON_ANDROID_PACKAGE_SUFFIX)
-LOCAL_DEX_PREOPT := false
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
 LOCAL_MODULE := Tycho
 LOCAL_MODULE_OWNER := huawei
 LOCAL_MODULE_TAGS := optional
@@ -72,94 +39,10 @@ LOCAL_DEX_PREOPT := false
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
-LOCAL_MODULE := CallStatistics
-LOCAL_MODULE_OWNER := huawei
-LOCAL_MODULE_TAGS := optional
-LOCAL_SRC_FILES := proprietary/priv-app/CallStatistics/CallStatistics.apk
-LOCAL_CERTIFICATE := platform
-LOCAL_MODULE_CLASS := APPS
-LOCAL_PRIVILEGED_MODULE := true
-LOCAL_MODULE_SUFFIX := $(COMMON_ANDROID_PACKAGE_SUFFIX)
-LOCAL_DEX_PREOPT := false
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
 LOCAL_MODULE := CNEService
 LOCAL_MODULE_OWNER := huawei
 LOCAL_MODULE_TAGS := optional
 LOCAL_SRC_FILES := proprietary/priv-app/CNEService/CNEService.apk
-LOCAL_CERTIFICATE := platform
-LOCAL_MODULE_CLASS := APPS
-LOCAL_PRIVILEGED_MODULE := true
-LOCAL_MODULE_SUFFIX := $(COMMON_ANDROID_PACKAGE_SUFFIX)
-LOCAL_DEX_PREOPT := false
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
-LOCAL_MODULE := ConnMO
-LOCAL_MODULE_OWNER := huawei
-LOCAL_MODULE_TAGS := optional
-LOCAL_SRC_FILES := proprietary/priv-app/ConnMO/ConnMO.apk
-LOCAL_CERTIFICATE := platform
-LOCAL_MODULE_CLASS := APPS
-LOCAL_PRIVILEGED_MODULE := true
-LOCAL_MODULE_SUFFIX := $(COMMON_ANDROID_PACKAGE_SUFFIX)
-LOCAL_DEX_PREOPT := false
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
-LOCAL_MODULE := DCMO
-LOCAL_MODULE_OWNER := huawei
-LOCAL_MODULE_TAGS := optional
-LOCAL_SRC_FILES := proprietary/priv-app/DCMO/DCMO.apk
-LOCAL_CERTIFICATE := platform
-LOCAL_MODULE_CLASS := APPS
-LOCAL_PRIVILEGED_MODULE := true
-LOCAL_MODULE_SUFFIX := $(COMMON_ANDROID_PACKAGE_SUFFIX)
-LOCAL_DEX_PREOPT := false
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
-LOCAL_MODULE := DiagMon
-LOCAL_MODULE_OWNER := huawei
-LOCAL_MODULE_TAGS := optional
-LOCAL_SRC_FILES := proprietary/priv-app/DiagMon/DiagMon.apk
-LOCAL_CERTIFICATE := platform
-LOCAL_MODULE_CLASS := APPS
-LOCAL_PRIVILEGED_MODULE := true
-LOCAL_MODULE_SUFFIX := $(COMMON_ANDROID_PACKAGE_SUFFIX)
-LOCAL_DEX_PREOPT := false
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
-LOCAL_MODULE := DMService
-LOCAL_MODULE_OWNER := huawei
-LOCAL_MODULE_TAGS := optional
-LOCAL_SRC_FILES := proprietary/priv-app/DMService/DMService.apk
-LOCAL_CERTIFICATE := platform
-LOCAL_MODULE_CLASS := APPS
-LOCAL_PRIVILEGED_MODULE := true
-LOCAL_MODULE_SUFFIX := $(COMMON_ANDROID_PACKAGE_SUFFIX)
-LOCAL_DEX_PREOPT := false
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
-LOCAL_MODULE := GCS
-LOCAL_MODULE_OWNER := huawei
-LOCAL_SRC_FILES := proprietary/priv-app/GCS/GCS.apk
-LOCAL_CERTIFICATE := PRESIGNED
-LOCAL_MODULE_TAGS := optional
-LOCAL_MODULE_CLASS := APPS
-LOCAL_MODULE_SUFFIX := .apk
-LOCAL_PRIVILEGED_MODULE := true
-LOCAL_DEX_PREOPT := false
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
-LOCAL_MODULE := HiddenMenu
-LOCAL_MODULE_OWNER := huawei
-LOCAL_MODULE_TAGS := optional
-LOCAL_SRC_FILES := proprietary/priv-app/HiddenMenu/HiddenMenu.apk
 LOCAL_CERTIFICATE := platform
 LOCAL_MODULE_CLASS := APPS
 LOCAL_PRIVILEGED_MODULE := true
@@ -203,9 +86,9 @@ LOCAL_DEX_PREOPT := false
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
-LOCAL_MODULE := com.google.android.camera.experimental2015
+LOCAL_MODULE := com.google.android.camera.experimental2016
 LOCAL_MODULE_TAGS := optional
-LOCAL_SRC_FILES := proprietary/framework/com.google.android.camera.experimental2015.jar
+LOCAL_SRC_FILES := proprietary/framework/com.google.android.camera.experimental2016.jar
 LOCAL_CERTIFICATE := PRESIGNED
 LOCAL_MODULE_CLASS := JAVA_LIBRARIES
 LOCAL_MODULE_SUFFIX := $(COMMON_JAVA_PACKAGE_SUFFIX)
@@ -328,7 +211,7 @@ $(LOCAL_BUILT_MODULE):
 	$(hide) rm -rf $(SYMLINK)
 	$(hide) ln -sf $(TARGET) $(SYMLINK)
 	$(hide) touch $@
-	
+
 include $(CLEAR_VARS)
 LOCAL_MODULE := izat.conf
 LOCAL_MODULE_CLASS := FAKE
