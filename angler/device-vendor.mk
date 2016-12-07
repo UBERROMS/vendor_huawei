@@ -14,6 +14,9 @@
 
 # Prebuilt APKs
 PRODUCT_PACKAGES += \
+    DMAgent \
+	HwMMITest \
+	HwSarControlService \
     ims \
     Tycho
 
@@ -26,6 +29,7 @@ PRODUCT_PACKAGES += \
 # Prebuilt privileged APKs
 PRODUCT_PACKAGES += \
     CNEService \
+	DMService \
     HotwordEnrollment \
     qcrilmsgtunnel \
     SprintDM
