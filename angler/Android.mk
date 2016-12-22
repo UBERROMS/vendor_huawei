@@ -178,54 +178,6 @@ $(LOCAL_BUILT_MODULE):
 	$(hide) touch $@
 
 include $(CLEAR_VARS)
-LOCAL_MODULE := imscmservice
-LOCAL_MODULE_CLASS := FAKE
-LOCAL_MODULE_TAGS := optional
-include $(BUILD_SYSTEM)/base_rules.mk
-$(LOCAL_BUILT_MODULE): TARGET := /vendor/bin/imscmservice
-$(LOCAL_BUILT_MODULE): SYMLINK := $(TARGET_OUT)/bin/$(LOCAL_MODULE)
-$(LOCAL_BUILT_MODULE):
-	$(hide) echo "Symlink: $(SYMLINK) -> $(TARGET)"
-	$(hide) mkdir -p $(dir $@)
-	$(hide) mkdir -p $(dir $(SYMLINK))
-	$(hide) rm -rf $@
-	$(hide) rm -rf $(SYMLINK)
-	$(hide) ln -sf $(TARGET) $(SYMLINK)
-	$(hide) touch $@
-
-include $(CLEAR_VARS)
-LOCAL_MODULE := imsdatadaemon
-LOCAL_MODULE_CLASS := FAKE
-LOCAL_MODULE_TAGS := optional
-include $(BUILD_SYSTEM)/base_rules.mk
-$(LOCAL_BUILT_MODULE): TARGET := /vendor/bin/imsdatadaemon
-$(LOCAL_BUILT_MODULE): SYMLINK := $(TARGET_OUT)/bin/$(LOCAL_MODULE)
-$(LOCAL_BUILT_MODULE):
-	$(hide) echo "Symlink: $(SYMLINK) -> $(TARGET)"
-	$(hide) mkdir -p $(dir $@)
-	$(hide) mkdir -p $(dir $(SYMLINK))
-	$(hide) rm -rf $@
-	$(hide) rm -rf $(SYMLINK)
-	$(hide) ln -sf $(TARGET) $(SYMLINK)
-	$(hide) touch $@
-
-include $(CLEAR_VARS)
-LOCAL_MODULE := imsqmidaemon
-LOCAL_MODULE_CLASS := FAKE
-LOCAL_MODULE_TAGS := optional
-include $(BUILD_SYSTEM)/base_rules.mk
-$(LOCAL_BUILT_MODULE): TARGET := /vendor/bin/imsqmidaemon
-$(LOCAL_BUILT_MODULE): SYMLINK := $(TARGET_OUT)/bin/$(LOCAL_MODULE)
-$(LOCAL_BUILT_MODULE):
-	$(hide) echo "Symlink: $(SYMLINK) -> $(TARGET)"
-	$(hide) mkdir -p $(dir $@)
-	$(hide) mkdir -p $(dir $(SYMLINK))
-	$(hide) rm -rf $@
-	$(hide) rm -rf $(SYMLINK)
-	$(hide) ln -sf $(TARGET) $(SYMLINK)
-	$(hide) touch $@
-
-include $(CLEAR_VARS)
 LOCAL_MODULE := flp.conf
 LOCAL_MODULE_CLASS := FAKE
 LOCAL_MODULE_TAGS := optional

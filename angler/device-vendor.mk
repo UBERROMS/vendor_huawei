@@ -36,10 +36,7 @@ PRODUCT_PACKAGES += \
 
 # Symlinks Binaries
 PRODUCT_PACKAGES += \
-    ims_rtp_daemon \
-    imscmservice \
-    imsdatadaemon \
-    imsqmidaemon
+    ims_rtp_daemon
 
 # Symlinks Libraries
 PRODUCT_PACKAGES += \
