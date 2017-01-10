@@ -14,10 +14,10 @@
 
 # Prebuilt APKs
 PRODUCT_PACKAGES += \
-    DMAgent \
-	HwMMITest \
-	HwSarControlService \
+    HwMMITest \
+    HwSarControlService \
     ims \
+    SetupSmartDeviceOverlay \
     Tycho
 
 # Prebuilt jars
@@ -28,9 +28,15 @@ PRODUCT_PACKAGES += \
 
 # Prebuilt privileged APKs
 PRODUCT_PACKAGES += \
+    CallStatistics \
+    CarrierEntitlement \
+    CarrierServices \
     CNEService \
-	DMService \
-    HotwordEnrollment \
+    ConnMO \
+    DCMO \
+    DiagMon \
+    DMService \
+    HiddenMenu \
     qcrilmsgtunnel \
     SprintDM
 
