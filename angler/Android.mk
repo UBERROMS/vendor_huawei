@@ -74,7 +74,7 @@ include $(BUILD_PREBUILT)
 include $(CLEAR_VARS)
 LOCAL_MODULE := CallStatistics
 LOCAL_MODULE_TAGS := optional
-LOCAL_SRC_FILES := CallStatistics/CallStatistics.apk
+LOCAL_SRC_FILES := proprietary/priv-app/CallStatistics/CallStatistics.apk
 LOCAL_CERTIFICATE := platform
 LOCAL_MODULE_CLASS := APPS
 LOCAL_PRIVILEGED_MODULE := true
@@ -84,7 +84,7 @@ include $(BUILD_PREBUILT)
 include $(CLEAR_VARS)
 LOCAL_MODULE := CarrierEntitlement
 LOCAL_MODULE_TAGS := optional
-LOCAL_SRC_FILES := CarrierEntitlement/CarrierEntitlement.apk
+LOCAL_SRC_FILES := proprietary/priv-app/CarrierEntitlement/CarrierEntitlement.apk
 LOCAL_CERTIFICATE := platform
 LOCAL_MODULE_CLASS := APPS
 LOCAL_PRIVILEGED_MODULE := true
@@ -94,7 +94,7 @@ include $(BUILD_PREBUILT)
 include $(CLEAR_VARS)
 LOCAL_MODULE := CarrierServices
 LOCAL_MODULE_TAGS := optional
-LOCAL_SRC_FILES := CarrierServices/CarrierServices.apk
+LOCAL_SRC_FILES := proprietary/priv-app/CarrierServices/CarrierServices.apk
 LOCAL_CERTIFICATE := PRESIGNED
 LOCAL_MODULE_CLASS := APPS
 LOCAL_PRIVILEGED_MODULE := true
@@ -104,7 +104,7 @@ include $(BUILD_PREBUILT)
 include $(CLEAR_VARS)
 LOCAL_MODULE := CNEService
 LOCAL_MODULE_TAGS := optional
-LOCAL_SRC_FILES := CNEService/CNEService.apk
+LOCAL_SRC_FILES := proprietary/priv-app/CNEService/CNEService.apk
 LOCAL_CERTIFICATE := platform
 LOCAL_MODULE_CLASS := APPS
 LOCAL_PRIVILEGED_MODULE := true
@@ -114,7 +114,7 @@ include $(BUILD_PREBUILT)
 include $(CLEAR_VARS)
 LOCAL_MODULE := ConnMO
 LOCAL_MODULE_TAGS := optional
-LOCAL_SRC_FILES := ConnMO/ConnMO.apk
+LOCAL_SRC_FILES := proprietary/priv-app/ConnMO/ConnMO.apk
 LOCAL_CERTIFICATE := platform
 LOCAL_MODULE_CLASS := APPS
 LOCAL_PRIVILEGED_MODULE := true
@@ -124,7 +124,7 @@ include $(BUILD_PREBUILT)
 include $(CLEAR_VARS)
 LOCAL_MODULE := DCMO
 LOCAL_MODULE_TAGS := optional
-LOCAL_SRC_FILES := DCMO/DCMO.apk
+LOCAL_SRC_FILES := proprietary/priv-app/DCMO/DCMO.apk
 LOCAL_CERTIFICATE := platform
 LOCAL_MODULE_CLASS := APPS
 LOCAL_PRIVILEGED_MODULE := true
@@ -134,7 +134,7 @@ include $(BUILD_PREBUILT)
 include $(CLEAR_VARS)
 LOCAL_MODULE := DiagMon
 LOCAL_MODULE_TAGS := optional
-LOCAL_SRC_FILES := DiagMon/DiagMon.apk
+LOCAL_SRC_FILES := proprietary/priv-app/DiagMon/DiagMon.apk
 LOCAL_CERTIFICATE := platform
 LOCAL_MODULE_CLASS := APPS
 LOCAL_PRIVILEGED_MODULE := true
@@ -144,7 +144,7 @@ include $(BUILD_PREBUILT)
 include $(CLEAR_VARS)
 LOCAL_MODULE := DMService
 LOCAL_MODULE_TAGS := optional
-LOCAL_SRC_FILES := DMService/DMService.apk
+LOCAL_SRC_FILES := proprietary/priv-app/DMService/DMService.apk
 LOCAL_CERTIFICATE := platform
 LOCAL_MODULE_CLASS := APPS
 LOCAL_PRIVILEGED_MODULE := true
@@ -154,8 +154,18 @@ include $(BUILD_PREBUILT)
 include $(CLEAR_VARS)
 LOCAL_MODULE := HiddenMenu
 LOCAL_MODULE_TAGS := optional
-LOCAL_SRC_FILES := HiddenMenu/HiddenMenu.apk
+LOCAL_SRC_FILES := proprietary/priv-app/HiddenMenu/HiddenMenu.apk
 LOCAL_CERTIFICATE := platform
+LOCAL_MODULE_CLASS := APPS
+LOCAL_PRIVILEGED_MODULE := true
+LOCAL_MODULE_SUFFIX := $(COMMON_ANDROID_PACKAGE_SUFFIX)
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := HotwordEnrollment
+LOCAL_MODULE_TAGS := optional
+LOCAL_SRC_FILES := proprietary/priv-app/HotwordEnrollment/HotwordEnrollment.apk
+LOCAL_CERTIFICATE := PRESIGNED
 LOCAL_MODULE_CLASS := APPS
 LOCAL_PRIVILEGED_MODULE := true
 LOCAL_MODULE_SUFFIX := $(COMMON_ANDROID_PACKAGE_SUFFIX)
@@ -164,7 +174,7 @@ include $(BUILD_PREBUILT)
 include $(CLEAR_VARS)
 LOCAL_MODULE := qcrilmsgtunnel
 LOCAL_MODULE_TAGS := optional
-LOCAL_SRC_FILES := qcrilmsgtunnel/qcrilmsgtunnel.apk
+LOCAL_SRC_FILES := proprietary/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk
 LOCAL_CERTIFICATE := platform
 LOCAL_MODULE_CLASS := APPS
 LOCAL_PRIVILEGED_MODULE := true
@@ -174,7 +184,7 @@ include $(BUILD_PREBUILT)
 include $(CLEAR_VARS)
 LOCAL_MODULE := SprintDM
 LOCAL_MODULE_TAGS := optional
-LOCAL_SRC_FILES := SprintDM/SprintDM.apk
+LOCAL_SRC_FILES := proprietary/priv-app/SprintDM/SprintDM.apk
 LOCAL_CERTIFICATE := platform
 LOCAL_MODULE_CLASS := APPS
 LOCAL_PRIVILEGED_MODULE := true

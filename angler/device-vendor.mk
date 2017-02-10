@@ -16,9 +16,9 @@
 PRODUCT_PACKAGES += \
     HwMMITest \
     HwSarControlService \
+	HotwordEnrollment \
     ims \
-    SetupSmartDeviceOverlay \
-    Tycho
+    SetupSmartDeviceOverlay
 
 # Prebuilt jars
 PRODUCT_PACKAGES += \
