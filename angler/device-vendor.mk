@@ -1,4 +1,4 @@
-# Copyright (C) 2016 UBERROMS
+# Copyright (C) 2017 UBERROMS
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -14,11 +14,7 @@
 
 # Prebuilt APKs
 PRODUCT_PACKAGES += \
-    HwMMITest \
-    HwSarControlService \
-	HotwordEnrollment \
-    ims \
-    SetupSmartDeviceOverlay
+    ims
 
 # Prebuilt jars
 PRODUCT_PACKAGES += \
@@ -37,6 +33,7 @@ PRODUCT_PACKAGES += \
     DiagMon \
     DMService \
     HiddenMenu \
+	HotwordEnrollment \
     qcrilmsgtunnel \
     SprintDM
 

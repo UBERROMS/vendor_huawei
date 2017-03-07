@@ -1,4 +1,4 @@
-# Copyright (C) 2016 UBERROMS
+# Copyright (C) 2017 UBERROMS
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -32,39 +32,6 @@ LOCAL_MODULE := Tycho
 LOCAL_MODULE_OWNER := huawei
 LOCAL_MODULE_TAGS := optional
 LOCAL_SRC_FILES := proprietary/app/Tycho/Tycho.apk
-LOCAL_CERTIFICATE := platform
-LOCAL_MODULE_CLASS := APPS
-LOCAL_MODULE_SUFFIX := $(COMMON_ANDROID_PACKAGE_SUFFIX)
-LOCAL_DEX_PREOPT := false
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
-LOCAL_MODULE := SetupSmartDeviceOverlay
-LOCAL_MODULE_OWNER := huawei
-LOCAL_MODULE_TAGS := optional
-LOCAL_SRC_FILES := proprietary/app/SetupSmartDeviceOverlay/SetupSmartDeviceOverlay.apk
-LOCAL_CERTIFICATE := PRESIGNED
-LOCAL_MODULE_CLASS := APPS
-LOCAL_MODULE_SUFFIX := $(COMMON_ANDROID_PACKAGE_SUFFIX)
-LOCAL_DEX_PREOPT := false
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
-LOCAL_MODULE := HwMMITest
-LOCAL_MODULE_OWNER := huawei
-LOCAL_MODULE_TAGS := optional
-LOCAL_SRC_FILES := proprietary/app/HwMMITest/HwMMITest.apk
-LOCAL_CERTIFICATE := platform
-LOCAL_MODULE_CLASS := APPS
-LOCAL_MODULE_SUFFIX := $(COMMON_ANDROID_PACKAGE_SUFFIX)
-LOCAL_DEX_PREOPT := false
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
-LOCAL_MODULE := HwSarControlService
-LOCAL_MODULE_OWNER := huawei
-LOCAL_MODULE_TAGS := optional
-LOCAL_SRC_FILES := proprietary/app/HwSarControlService/HwSarControlService.apk
 LOCAL_CERTIFICATE := platform
 LOCAL_MODULE_CLASS := APPS
 LOCAL_MODULE_SUFFIX := $(COMMON_ANDROID_PACKAGE_SUFFIX)
