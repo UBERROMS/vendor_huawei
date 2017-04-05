@@ -159,6 +159,16 @@ LOCAL_MODULE_SUFFIX := $(COMMON_ANDROID_PACKAGE_SUFFIX)
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
+LOCAL_MODULE := Turbo
+LOCAL_MODULE_TAGS := optional
+LOCAL_SRC_FILES := proprietary/priv-app/Turbo/Turbo.apk
+LOCAL_CERTIFICATE := platform
+LOCAL_MODULE_CLASS := APPS
+LOCAL_PRIVILEGED_MODULE := true
+LOCAL_MODULE_SUFFIX := $(COMMON_ANDROID_PACKAGE_SUFFIX)
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
 LOCAL_MODULE := com.google.android.camera.experimental2016
 LOCAL_MODULE_TAGS := optional
 LOCAL_SRC_FILES := proprietary/framework/com.google.android.camera.experimental2016.jar
