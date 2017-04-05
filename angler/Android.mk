@@ -13,7 +13,6 @@
 # limitations under the License.
 
 LOCAL_PATH := $(call my-dir)
-
 ifneq ($(filter angler,$(TARGET_DEVICE)),)
 
 include $(CLEAR_VARS)
