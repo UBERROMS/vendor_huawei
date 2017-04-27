@@ -22,17 +22,6 @@ LOCAL_SRC_FILES := proprietary/app/ims/ims.apk
 LOCAL_CERTIFICATE := platform
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := APPS
-LOCAL_MODULE_SUFFIX := .apk
-LOCAL_DEX_PREOPT := false
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
-LOCAL_MODULE := Tycho
-LOCAL_MODULE_OWNER := huawei
-LOCAL_MODULE_TAGS := optional
-LOCAL_SRC_FILES := proprietary/app/Tycho/Tycho.apk
-LOCAL_CERTIFICATE := platform
-LOCAL_MODULE_CLASS := APPS
 LOCAL_MODULE_SUFFIX := $(COMMON_ANDROID_PACKAGE_SUFFIX)
 LOCAL_DEX_PREOPT := false
 include $(BUILD_PREBUILT)
@@ -128,7 +117,7 @@ LOCAL_MODULE_SUFFIX := $(COMMON_ANDROID_PACKAGE_SUFFIX)
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
-LOCAL_MODULE := HotwordEnrollment
+LOCAL_MODULE := GoogleHotwordEnrollment
 LOCAL_MODULE_TAGS := optional
 LOCAL_SRC_FILES := proprietary/priv-app/HotwordEnrollment/HotwordEnrollment.apk
 LOCAL_CERTIFICATE := PRESIGNED

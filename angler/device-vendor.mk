@@ -33,10 +33,10 @@ PRODUCT_PACKAGES += \
     DiagMon \
     DMService \
     HiddenMenu \
-	HotwordEnrollment \
+    GoogleHotwordEnrollment \
     qcrilmsgtunnel \
     SprintDM \
-	Turbo
+    Turbo
 
 # Symlinks Binaries
 PRODUCT_PACKAGES += \
