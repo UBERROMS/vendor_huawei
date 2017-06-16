@@ -14,8 +14,13 @@
 
 # Prebuilt APKs
 PRODUCT_PACKAGES += \
-    ims
-
+    HwMMITest \
+    HwSarControlService \
+    ims \
+    SetupSmartDeviceOverlay \
+    TimeService \
+    Tycho 
+	
 # Prebuilt jars
 PRODUCT_PACKAGES += \
     com.google.widevine.software.drm \
@@ -24,6 +29,7 @@ PRODUCT_PACKAGES += \
 
 # Prebuilt privileged APKs
 PRODUCT_PACKAGES += \
+    atfwd \
     CallStatistics \
     CarrierEntitlement \
     CarrierServices \
@@ -32,15 +38,11 @@ PRODUCT_PACKAGES += \
     DCMO \
     DiagMon \
     DMService \
+    GCS \
     HiddenMenu \
-    GoogleHotwordEnrollment \
+    HotwordEnrollment \
     qcrilmsgtunnel \
-    SprintDM \
-    Turbo
-
-# Symlinks Binaries
-PRODUCT_PACKAGES += \
-    ims_rtp_daemon
+    SprintDM
 
 # Symlinks Libraries
 PRODUCT_PACKAGES += \
@@ -49,13 +51,3 @@ PRODUCT_PACKAGES += \
     libdmengine.so \
     libdmjavaplugin.so \
     libManufacture.so
-
-# Symlinks Config
-PRODUCT_PACKAGES += \
-    dsi_config.xml \
-    flp.conf \
-    izat.conf \
-    netmgr_config.xml \
-    pp_calib_data_SAMSUNG_S6E3HA3X01_5P7_1440P_CMD_DUAL0.xml \
-    profile.txt \
-    sap.conf
